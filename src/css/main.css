@@ -1,0 +1,171 @@
+* {
+	box-sizing: border-box;
+}
+
+#q4Wrapper {
+	background-color: #2a3035;
+	font-family: "Roboto", sans-serif;
+	color: white;
+}
+#q4Wrapper h1,
+#q4Wrapper h3 {
+	margin: 0;
+}
+#q4Wrapper h1 {
+	font-size: 48px;
+}
+#q4Wrapper h3 {
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+#q4Wrapper header,
+#q4Wrapper footer {
+	background-color: #22272b;
+}
+#q4Wrapper header {
+	padding: 20px;
+}
+#q4Wrapper footer {
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 5px;
+}
+#q4Wrapper article {
+	text-align: center;
+}
+#q4Wrapper article img {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+#q4Wrapper a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	transition: transform 0.3s ease;
+}
+#q4Wrapper a:hover {
+	transform: scale(1.05);
+}
+#q4Wrapper a span {
+	opacity: 0.5;
+}
+
+.layout_inner {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 30px 20px;
+}
+.layout_header {
+	text-align: center;
+}
+
+/* Matthew's report styling begins below */
+/* I decided to go with a mobile first pattern */
+
+/* Base styling assuming that entire site would have the same color background */
+body {
+	background-color: rgb(43, 48, 52);
+}
+
+.layout {
+	font-family: sans-serif;
+	color: rgb(255, 255, 255);
+}
+
+.layout_inner {
+	max-width: 450px;
+}
+
+/* Error Message for empty reports */
+
+.empty-array {
+	text-align: center;
+	width: 100%;
+	font-size: 1em;
+	padding: 30px;
+}
+
+/* Header */
+
+.layout_header {
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.layout_header h1 {
+	font-size: 1.8em;
+	margin: 0;
+}
+
+/* Reports */
+.reports {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.reports_item {
+	text-align: center;
+	margin: 10px 0;
+}
+.reports_item > a {
+	display: block;
+	margin: 0 0 10px;
+}
+
+.reports_item img {
+	height: 250px;
+	-webkit-box-shadow: 0px 6px 17px 0px rgba(0, 0, 0, 0.57);
+	box-shadow: 0px 6px 17px 0px rgba(0, 0, 0, 0.57);
+}
+
+.reports_docs {
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 10px 15px;
+	border-radius: 3%;
+}
+.reports_title {
+	font-size: 0.7em;
+	margin: 5px 0;
+}
+.reports_title a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.reports_title a span {
+	color: rgb(112, 112, 112);
+}
+
+/* Responsive */
+@media only screen and (min-width: 569px) {
+	.layout_inner {
+		max-width: 528px;
+	}
+	.reports {
+		-webkit-box-pack: space-evenly;
+		-ms-flex-pack: space-evenly;
+		justify-content: space-between;
+	}
+}
+@media only screen and (min-width: 769px) {
+	.layout_inner {
+		max-width: 786px;
+	}
+
+	.layout_header h1 {
+		font-size: 2.5em;
+	}
+}
+
+@media only screen and (min-width: 840px) {
+	.reports_title {
+		margin: 5px 0;
+	}
+}
